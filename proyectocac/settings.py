@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#u@(4^tt2^zg2ovt8v9&+k6(8x%*#9nx#0&swz5cg!=3vji@p0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,13 +74,14 @@ WSGI_APPLICATION = 'proyectocac.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql10457445',
-        'USER': 'sql10457445',
-        'PASSWORD': 'PaxDmz2bZU',
-        'HOST': 'sql10.freemysqlhosting.net',
+        'NAME': 'cac',
+        'USER': 'root',
+        'PASSWORD': 'Cac2021!',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
 }

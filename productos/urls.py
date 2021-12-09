@@ -9,7 +9,7 @@ urlpatterns = [
     path('nosotros',views.nosotros,name='nosotros'),
     path('productos',views.productos,name='productos'),
     path('productos/crear',views.crear,name='crear'),
+    path('productos/eliminar/<int:id>',views.eliminar,name='eliminar'),
     path('productos/editar/<int:id>',views.editar,name='editar'),
-    path('productos/eliminar/<int:id>',views.eliminar,name='eliminar')
-
+    path('productosjson',views.productosjson,name='productosjson'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
